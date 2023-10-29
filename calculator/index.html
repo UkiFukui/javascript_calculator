@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>電卓</title>
+  </head>
+  
+  <body>
+    
+    <div id="container">
+      <div id="result-display"></div>
+      <button class="btn" id="seven" value="7" onclick="calculate('seven')">7</button>
+      <button class="btn" id="eight" value="8" onclick="calculate('eight')">8</button>
+      <button class="btn" id="nine" value="9" onclick="calculate('nine')">9</button>
+      <button class="btn" id="plus" value="+" onclick="displayOperator('plus')">+</button>
+
+      <button class="btn" id="four" value="4" onclick="calculate('four')">4</button>
+      <button class="btn" id="five" value="5" onclick="calculate('five')">5</button>
+      <button class="btn" id="six" value="6" onclick="calculate('six')">6</button>
+      <button class="btn" id="minus" value="-" onclick="displayOperator('minus')">-</button>
+
+      <button class="btn" id="one" value="1" onclick="calculate('one')">1</button>
+      <button class="btn" id="two" value="2" onclick="calculate('two')">2</button>
+      <button class="btn" id="three" value="3" onclick="calculate('three')">3</button>
+      <button class="btn" id="times" value="*" onclick="displayOperator('times')">*</button>
+
+      <button class="btn" id="ten" value="0" onclick="calculate('ten')">0</button>
+      <button class="btn" id="hundred" value="00" onclick="calculate('hundred')">00</button>
+      <button class="btn" id="point" value="." onclick="calculate('point')">.</button>
+      <button class="btn" id="divide" value="/" onclick="displayOperator('divide')">/</button>
+      
+      <button class="btn" id="allClear" onclick="allClear()">AC</button>
+      <button class="btn" id="equal" onclick="equal()">=</button>
+    </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
